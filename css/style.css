@@ -1,0 +1,68 @@
+/* Paleta basada en tu imagen */
+:root {
+  --naranja-oscuro: #d65a1f;
+  --naranja-medio: #f28c3a;
+  --crema-claro: #fdf3e7;
+  --gris-claro: #f5f5f5;
+  --texto: #333;
+}
+
+body.inicio {
+  background-color: var(--gris-claro);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.encabezado {
+  padding: 2rem;
+  background-color: var(--crema-claro);
+  border-bottom: 2px solid var(--naranja-medio);
+}
+
+.acceso-roles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center;     /* centra horizontalmente */
+  min-height: 60vh;        /* ocupa 60% de la pantalla */
+}
+
+
+.botones-rol {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-naranja {
+  background-color: var(--naranja-oscuro);
+}
+
+.btn-naranja:hover {
+  background-color: var(--naranja-medio);
+}
+
+.pie {
+  background-color: var(--crema-claro);
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--naranja-medio);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+

@@ -1,0 +1,57 @@
+@import url(style.css);
+
+/* Página del mesero */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: hidden; /* oculta scroll vertical */
+}
+
+body.mesero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gris-claro);
+}
+
+.encabezado, .pie {
+  width: 100%;          /* ocupan todo el ancho */
+  margin: 0;            /* eliminamos márgenes externos */
+  padding: 1.5rem 1rem; /* espacio interno */
+  text-align: center;   /* centra el texto */
+  background-color: var(--crema-claro);
+}
+
+.encabezado {
+  border-bottom: 1px solid var(--naranja-medio);
+}
+
+.mesas {
+  padding: 2rem;
+  text-align: center;
+}
+
+.lista-mesas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 1.5rem; /* espacio entre tarjetas */
+  margin-top: 1rem;
+  justify-items: center; /* centra cada tarjeta */
+}
+
+.mesa-card {
+  background-color: var(--crema-claro);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+
+.pie {
+  border-top: 1px solid var(--naranja-medio);
+  margin-top: auto;     /* empuja el footer al final */
+}
