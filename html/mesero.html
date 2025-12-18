@@ -3,78 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <title>Labur-Ga | Mesero</title>
-  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/mesero.css">
 </head>
 <body class="mesero">
 
+  <!-- Encabezado -->
   <header class="encabezado">
     <h1>Panel del Mesero</h1>
     <p>Gestión de mesas y pedidos</p>
   </header>
 
+  <!-- Contenido principal -->
   <main>
+    <!-- Cuadrícula de mesas -->
     <section class="mesas">
-      <div class="mesa">
+      <div class="mesa disponible">
         <h3>Mesa 1</h3>
         <p>Estado: Disponible</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa ocupada">
         <h3>Mesa 2</h3>
         <p>Estado: Ocupada</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa ocupada">
         <h3>Mesa 3</h3>
         <p>Estado: Ocupada</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa reservada">
         <h3>Mesa 4</h3>
-        <p>Estado: Ocupada</p>
+        <p>Estado: Reservada</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa disponible">
         <h3>Mesa 5</h3>
-        <p>Estado: Ocupada</p>
+        <p>Estado: Disponible</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa ocupada">
         <h3>Mesa 6</h3>
         <p>Estado: Ocupada</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa reservada">
         <h3>Mesa 7</h3>
-        <p>Estado: Ocupada</p>
+        <p>Estado: Reservada</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      <div class="mesa">
+      <div class="mesa disponible">
         <h3>Mesa 8</h3>
-        <p>Estado: Ocupada</p>
+        <p>Estado: Disponible</p>
         <button class="btn btn-naranja">Registrar pedido</button>
       </div>
-      
     </section>
 
+    <!-- Formulario de pedido -->
     <section class="form-pedido">
       <h2>Formulario de Pedido</h2>
       <form>
-        <label>Producto:</label>
-        <input type="text" name="producto">
+        <!-- Selección de mesa -->
+        <label>Mesa:</label>
+        <select name="mesa">
+          <option value="1">Mesa 1</option>
+          <option value="2">Mesa 2</option>
+          <option value="3">Mesa 3</option>
+          <option value="4">Mesa 4</option>
+          <option value="5">Mesa 5</option>
+          <option value="6">Mesa 6</option>
+          <option value="7">Mesa 7</option>
+          <option value="8">Mesa 8</option>
+        </select>
 
+        <!-- Selección de producto -->
+        <label>Producto (Comida):</label>
+        <select name="producto">
+          <option value="hamburguesa">Hamburguesa Tradicional</option>
+          <option value="hamburguesa">Hamburguesa Ranchera</option>
+          <option value="hamburguesa">Hamburguesa Java</option>
+          <option value="hamburguesa">Hamburguesa Python</option>
+          <option value="hamburguesa">Hamburguesa JS</option>
+          <option value="perros calientes">Perros Calientes</option>
+          <option value="perros calientes">Perros Calientes Mysql</option>
+          <option value="perros calientes">Perros Calientes Node</option>
+          <option value="perros calientes">Perros Calientes React</option>
+          <option value="perros calientes">Perros Calientes Css</option>
+          <option value="papas locas">Papas Locas</option>
+          <option value="papas locas">Papas Html</option>
+          <option value="papas locas">Papas C#</option>
+        </select>
+
+        <!-- Selección de bebida -->
+        <label>Bebida:</label>
+        <select name="bebida">
+          <option value="agua">Agua</option>
+          <option value="gaseosa">Gaseosa</option>
+          <option value="cerveza">Cerveza</option>
+          <option value="jugo">Jugo natural</option>
+        </select>
+
+        <!-- Cantidad -->
         <label>Cantidad:</label>
-        <input type="number" name="cantidad">
+        <input type="number" name="cantidad" min="1">
 
+        <!-- Observaciones -->
         <label>Observaciones:</label>
         <textarea name="observaciones"></textarea>
 
+        <!-- Botón enviar -->
         <button type="submit" class="btn btn-naranja">Enviar</button>
       </form>
     </section>
   </main>
 
+  <!-- Pie de página -->
   <footer class="pie">
     <p>&copy; 2025 Labur-Ga. Todos los derechos reservados.</p>
   </footer>
