@@ -1,0 +1,78 @@
+@import url(style.css);
+
+/* Página del administrador */
+body.admin {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gris-claro);
+}
+
+/* Encabezado y pie */
+.encabezado, .pie {
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: var(--crema-claro);
+}
+
+.encabezado {
+  border-bottom: 1px solid var(--naranja-medio);
+}
+
+.pie {
+  border-top: 1px solid var(--naranja-medio);
+  margin-top: auto;
+}
+
+/* Sección de nuevo trabajador */
+.nuevo-trabajador {
+  margin: 2rem auto;
+  width: 400px;
+  background: var(--crema-claro);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nuevo-trabajador h2 {
+  margin-bottom: 1rem;
+  color: var(--naranja-oscuro);
+  text-align: center;
+}
+
+.nuevo-trabajador form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nuevo-trabajador label {
+  font-weight: bold;
+  color: var(--naranja-oscuro);
+}
+
+.nuevo-trabajador input,
+.nuevo-trabajador select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--naranja-medio);
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+/* Botón registrar */
+.btn-naranja {
+  background-color: var(--naranja-medio);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-naranja:hover {
+  background-color: var(--naranja-oscuro);
+}
