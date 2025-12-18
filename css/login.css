@@ -67,3 +67,12 @@ body.login {
   background-color: var(--naranja-oscuro);
 }
 
+.pie {
+  width: 100%;                 /* ocupa todo el ancho */
+  text-align: center;          /* centra el texto */
+  background-color: var(--crema-claro);
+  padding: 1rem;
+  border-top: 1px solid var(--naranja-medio);
+  margin-top: auto;            /* empuja el footer al fondo */
+  box-sizing: border-box;
+}
