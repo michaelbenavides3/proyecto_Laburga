@@ -1,12 +1,10 @@
 @import url(style.css);
 
 /* Página del mesero */
-
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-y: auto; /* oculta scroll vertical */
 }
 
 body.mesero {
@@ -16,11 +14,12 @@ body.mesero {
   background-color: var(--gris-claro);
 }
 
+/* Encabezado y pie */
 .encabezado, .pie {
-  width: 100%;          /* ocupan todo el ancho */
-  margin: 0;            /* eliminamos márgenes externos */
-  padding: 1.5rem 1rem; /* espacio interno */
-  text-align: center;   /* centra el texto */
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  text-align: center;
   background-color: var(--crema-claro);
 }
 
@@ -28,20 +27,21 @@ body.mesero {
   border-bottom: 1px solid var(--naranja-medio);
 }
 
+.pie {
+  border-top: 1px solid var(--naranja-medio);
+  margin-top: auto;
+}
+
+/* Cuadrícula de mesas */
 .mesas {
-  padding: 2rem;
-  text-align: center;
-}
-
-.lista-mesas {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-  gap: 1.5rem; /* espacio entre tarjetas */
-  margin-top: 1rem;
-  justify-items: center; /* centra cada tarjeta */
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
 }
 
-.mesa-card {
+.mesa {
   background-color: var(--crema-claro);
   padding: 1.5rem;
   border-radius: 8px;
@@ -50,8 +50,45 @@ body.mesero {
   text-align: center;
 }
 
+/* Colores por estado */
+.mesa.disponible { background-color: #d4edda; } /* verde suave */
+.mesa.ocupada { background-color: #f8d7da; }    /* rojo suave */
+.mesa.reservada { background-color: #fff3cd; }  /* amarillo suave */
 
-.pie {
-  border-top: 1px solid var(--naranja-medio);
-  margin-top: auto;     /* empuja el footer al final */
+/* Botones dentro de las mesas */
+.mesa button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Formulario de pedido */
+.form-pedido {
+  margin: 2rem auto;
+  width: 400px;
+  background: var(--crema-claro);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-pedido h2 {
+  margin-bottom: 1rem;
+  color: var(--naranja-oscuro);
+}
+
+.form-pedido form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-pedido input,
+.form-pedido textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--naranja-medio);
+  border-radius: 4px;
 }
