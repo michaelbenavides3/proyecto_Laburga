@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/registrar-pedido.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <div class="pedido">
+    <h2 class="pedido__titulo">Registrar Pedido</h2>
+    <form class="pedido__form"> <label>Mesa: <select class="pedido__select">
+          <option>Mesa 1</option>
+          <option>Mesa 2</option>
+          <option>Mesa 3</option>
+        </select> </label> <label>Cliente: <input type="text" class="pedido__input" placeholder="Nombre del cliente">
+      </label>
+      <table class="pedido__tabla">
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Observaciones</th>
+        </tr>
+        <tr>
+          <td><input type="text" class="pedido__input" placeholder="Producto"></td>
+          <td><input type="number" class="pedido__input" value="1"></td>
+          <td><input type="text" class="pedido__input" placeholder="Sin cebolla"></td>
+        </tr>
+      </table> <button type="submit" class="pedido__boton pedido__boton--guardar">Guardar Pedido</button>
+    </form>
+  </div> -->
+<div class="pedido">
+  <h2 class="pedido__titulo">Tomar Pedido</h2>
+  <form class="pedido__form"> 
+    <!-- Selección de mesa --> 
+     <label>Mesa: 
+      <select class="pedido__select">
+        <option>Mesa 1</option>
+        <option>Mesa 2</option>
+        <option>Mesa 3</option>
+        <option>Mesa 4</option>
+      </select> 
+    </label> 
+    <!-- Datos del cliente --> 
+     <label>Cliente: 
+      <input type="text" class="pedido__input" placeholder="Nombre del cliente"> 
+    </label> 
+    <label>Teléfono: <input type="text" class="pedido__input" placeholder="Teléfono del cliente"> 
+    </label> 
+    <!-- Productos -->
+    <table class="pedido__tabla">
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+      </tr>
+      <tr>
+        <td> Hamburguesa Clásica</td>
+        <td>$19.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hamburguesa Especial</td>
+        <td>$25.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hamburguesa Pollo</td>
+        <td>$22.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hamburguesa Suprema</td>
+        <td>$35.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hotdog Clasico</td>
+        <td>$19.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hotdog de la casa</td>
+        <td>$19.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hotdog Americano</td>
+        <td>$19.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Hotdog XXL 32cm</td>
+        <td>$19.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Papas Locas</td>
+        <td>$25.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Papas Especiales</td>
+        <td>$40.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>   
+      <tr>
+        <td>Gaseosa</td>
+        <td>$5.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Agua</td>
+        <td>$5.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+      <tr>
+        <td>Te Hatsu</td>
+        <td>$7.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr><tr>
+        <td>Cerveza</td>
+        <td>$12.000</td>
+        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
+      </tr>
+    </table> 
+    <label class="pedido__label">Observaciones generales del pedido:</label> 
+    <textarea class="pedido__observacion-general" placeholder="Observaciones Generales"> </textarea> 
+    <!-- Botón Guardar --> 
+     <button type="submit" class="pedido__boton pedido__boton--guardar">Guardar Pedido</button>
+    <button type="button" class="pedido__boton pedido__boton--cancelar" onclick="cancelarPedido()">Cancelar Pedido</button>
+  </form>
+</body>
+</html>
