@@ -22,6 +22,7 @@ body.inicio {
   padding: 2rem;
   background-color: var(--crema-claro);
   border-bottom: 2px solid var(--naranja-medio);
+  color: var(--naranja-oscuro);
 }
 
 .acceso-roles {
