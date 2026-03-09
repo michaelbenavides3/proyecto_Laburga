@@ -7,16 +7,29 @@
   background-color: var(crema-claro);
   color: var(--texto);
 } 
+.pedido__contenedor{
+  display: flex;
+  justify-content: space-between; /*separa de izquierda a derecha*/
+  align-items: flex-start; /*alinea al inicio de cada panel*/
+  margin-bottom: 20px;
+}
+.pedido__formulario{
+  flex: 1; /*ocupad el espacio disponible */
+  text-align: left;
+}
 .pedido__titulo { 
-  text-align: center; 
-  margin-bottom: 20px; 
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
   color: var(--naranja-oscuro);
 } 
 /* estilos para el logo del restaurante */
 .pedido__logo{
   width: 150px;
   height: 150px;
-  margin-left: 0;
+  text-align: right;
+  margin-top: 10px;
 }
 .pedido__tabla th { 
   background-color: var(--naranja-medio); 
