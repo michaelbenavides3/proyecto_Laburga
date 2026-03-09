@@ -1,10 +1,17 @@
 /* Paleta basada en tu imagen */
+
 :root {
   --naranja-oscuro: #d65a1f;
   --naranja-medio: #f28c3a;
+  --rojo-cancelar: #f00808;
+  --rojo-medio: #761717;
   --crema-claro: #fdf3e7;
   --gris-claro: #f5f5f5;
   --texto: #333;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 body.inicio {
@@ -20,6 +27,7 @@ body.inicio {
   padding: 2rem;
   background-color: var(--crema-claro);
   border-bottom: 2px solid var(--naranja-medio);
+  color: var(--naranja-oscuro);
 }
 
 .acceso-roles {
@@ -55,7 +63,7 @@ body.inicio {
   background-color: var(--naranja-medio);
 }
 
-.pie {
+.footer {
   background-color: var(--crema-claro);
   padding: 1rem;
   font-size: 0.9rem;
