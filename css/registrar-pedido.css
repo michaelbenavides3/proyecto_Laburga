@@ -1,0 +1,101 @@
+@import url(style.css);
+
+.pedido { 
+  width: 80%; 
+  margin: 20px auto; 
+  font-family: Arial, sans-serif; 
+  background-color: var(crema-claro);
+  color: var(--texto);
+} 
+.pedido__titulo { 
+  text-align: center; 
+  margin-bottom: 20px; 
+  color: var(--naranja-oscuro);
+} 
+/* estilos para el logo del restaurante */
+.pedido__logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 0;
+}
+.pedido__tabla th { 
+  background-color: var(--naranja-medio); 
+  color: #fff; 
+}
+.pedido__tabla td{
+  background-color: var(--gris-claro);
+}
+.pedido__form label { 
+  display: block; 
+  margin-top: 10px; 
+} 
+
+.datos__cliente{
+  margin-left: 11px;
+  
+}
+.pedido__input, .pedido__select { 
+  width: 300px; 
+  padding: 8px; 
+  margin-top: 5px; 
+} 
+.opcion__mesa{
+  margin-left: 22px;
+  width: 319px;
+}
+.pedido__tabla { 
+  width: 50%; 
+  border-collapse: collapse; 
+  margin: 20px auto; 
+} 
+.pedido__tabla th, .pedido__tabla td { 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  text-align: center; 
+} 
+.pedido__cantidad { 
+  width: 60px; 
+  text-align: center; 
+} 
+.pedido__boton { 
+  margin-top: 20px; 
+  padding: 10px 15px; 
+  background: var(--naranja-oscuro); 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+.pedido__boton--guardar:hover {
+  background: var(--naranja-medio);
+}
+.pedido__boton--cancelar{
+  background: var(--rojo-cancelar);
+  margin-left: 10px;
+}
+/* .pedido__boton-.pedido__boton--guardar{
+  background: var(--naranja-medio);
+} */
+.pedido__boton--cancelar:hover{
+  background: var(--rojo-medio);
+}
+.pedido__observacion-general {
+  width: 100%;          /* ocupa todo el ancho disponible */
+  height: 150px;        /* altura grande para escribir varias líneas */
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid var(--naranja-medio);
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: vertical;     /* permite al mesero agrandar/reducir manualmente */
+  background-color: var(--gris-claro);
+  color: var(--texto);
+}
+
+.pedido__label {
+  font-weight: bold;
+  color: var(--naranja-oscuro);
+  margin-top: 10px;
+  display: block;
+}
