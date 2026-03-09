@@ -31,28 +31,37 @@
     </form>
   </div> -->
 <div class="pedido">
-  <h2 class="pedido__titulo">Tomar Pedido</h2>
-  <form class="pedido__form"> 
-    <!-- Selección de mesa --> 
+  <!-- columna izquierda del formulario -->
+  <div class="pedidio__formulario">
+   <h2 class="pedido__titulo">Tomar Pedido</h2>
+   <form class="pedido__form"> 
+     <!-- Selección de mesa --> 
      <label>Mesa: 
-      <select class="pedido__select opcion__mesa">
-        <option>Mesa 1</option>
-        <option>Mesa 2</option>
-        <option>Mesa 3</option>
-        <option>Mesa 4</option>
-        <option>Mesa 5</option>
-        <option>Mesa 6</option>
-        <option>Mesa 7</option>
-        <option>Mesa 8</option>
-      </select> 
-    </label> 
-    <!-- Datos del cliente --> 
-     <label>Cliente: 
-      <input type="text" class="pedido__input datos__cliente" placeholder="Nombre del cliente"> 
-    </label> 
-    <label>Teléfono: <input type="text" class="pedido__input" placeholder="Teléfono del cliente"> 
-    </label> 
-    <!-- Productos -->
+       <select class="pedido__select opcion__mesa">
+         <option>Mesa 1</option>
+         <option>Mesa 2</option>
+         <option>Mesa 3</option>
+         <option>Mesa 4</option>
+         <option>Mesa 5</option>
+         <option>Mesa 6</option>
+         <option>Mesa 7</option>
+         <option>Mesa 8</option>
+        </select> 
+      </label> 
+      <!-- Datos del cliente --> 
+      <label>Cliente: 
+        <input type="text" class="pedido__input datos__cliente" placeholder="Nombre del cliente"> 
+      </label> 
+      <label>Teléfono: <input type="text" class="pedido__input" placeholder="Teléfono del cliente"> 
+      </label> 
+    </form>
+  </div>
+  <!-- columna derecha del formulario -->
+  <!-- logo del restaurante -->
+   <div class="pedidio__logo-contenedor">
+     <img src="../recurso/logo-burguer.png" alt="logo del restaurante" class="pedido__logo">
+   </div>
+  <!-- Productos -->
     <table class="pedido__tabla">
       <tr>
         <th>Producto</th>
@@ -132,8 +141,9 @@
     <label class="pedido__label">Observaciones generales del pedido:</label> 
     <textarea class="pedido__observacion-general" placeholder="Observaciones Generales"> </textarea> 
     <!-- Botón Guardar --> 
-     <button type="submit" class="pedido__boton pedido__boton--guardar">Guardar Pedido</button>
+    <button type="submit" class="pedido__boton pedido__boton--guardar">Guardar Pedido</button>
     <button type="button" class="pedido__boton pedido__boton--cancelar" onclick="cancelarPedido()">Cancelar Pedido</button>
-  </form>
+  <!-- </form> -->
+</div>
 </body>
 </html>

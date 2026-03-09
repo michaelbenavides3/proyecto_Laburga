@@ -12,6 +12,12 @@
   margin-bottom: 20px; 
   color: var(--naranja-oscuro);
 } 
+/* estilos para el logo del restaurante */
+.pedido__logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 0;
+}
 .pedido__tabla th { 
   background-color: var(--naranja-medio); 
   color: #fff; 
@@ -23,6 +29,7 @@
   display: block; 
   margin-top: 10px; 
 } 
+
 .datos__cliente{
   margin-left: 11px;
   
@@ -37,9 +44,9 @@
   width: 319px;
 }
 .pedido__tabla { 
-  width: 100%; 
+  width: 50%; 
   border-collapse: collapse; 
-  margin-top: 15px; 
+  margin: 20px auto; 
 } 
 .pedido__tabla th, .pedido__tabla td { 
   border: 1px solid #ccc; 
