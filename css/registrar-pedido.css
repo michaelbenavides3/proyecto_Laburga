@@ -220,3 +220,27 @@
   width: 60px;
   text-align: center;
 }
+
+.pedido__contenedor {
+  display: flex;
+  justify-content: space-between; /* mantiene columnas pero más controladas */
+  align-items: center;            /* centra verticalmente logo y formulario */
+  gap: 20px;                      /* reduce espacio entre formulario y logo */
+  padding: 10px 20px;             /* agrega un margen interno más compacto */
+}
+
+.pedidio__formulario {
+  flex: 1;                        /* ocupa la mitad del espacio */
+  max-width: 400px;               /* limita el ancho del formulario */
+}
+
+.pedidio__logo-contenedor {
+  flex: 1;                        /* ocupa la otra mitad */
+  display: flex;
+  justify-content: center;        /* centra el logo */
+}
+
+.pedido__logo {
+  max-width: 200px;               /* reduce tamaño del logo */
+  height: auto;
+}
