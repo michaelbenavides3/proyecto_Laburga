@@ -94,3 +94,30 @@ body.mesero {
   border-radius: 4px;
   background-color: #fff;
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none; /* elimina subrayado si usas <a> */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-naranja {
+  background-color: #ff6600; /* naranja principal */
+  color: #fff;
+  border: none;
+}
+
+.btn-naranja:hover {
+  background-color: #e65c00; /* tono más oscuro al pasar el mouse */
+  transform: scale(1.05);    /* efecto de zoom */
+}
+
+.btn-naranja:active {
+  background-color: #cc5200; /* tono más fuerte al hacer clic */
+}
