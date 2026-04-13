@@ -50,6 +50,10 @@ body.mesero {
   text-align: center;
 }
 
+.estado--mesa{
+  font-size: 18px;
+}
+
 /* Colores por estado */
 .mesa.disponible { background-color: #d4edda; } /* verde suave */
 .mesa.ocupada { background-color: #f8d7da; }    /* rojo suave */
@@ -98,7 +102,7 @@ body.mesero {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   border-radius: 6px;
@@ -121,3 +125,15 @@ body.mesero {
 .btn-naranja:active {
   background-color: #cc5200; /* tono más fuerte al hacer clic */
 }
+
+.btn-verde {
+  background-color: var(--btn-envio-verde); /* verde */
+  color: #fff;
+  border: none;
+}
+
+.btn-verde:hover {
+  background-color: var(--btn-hover-envio);
+  transform: scale(1.05);
+}
+
