@@ -18,7 +18,7 @@ header {
     background-color: var(--naranja-medio); /* usa tu variable */
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: var(--padding-header);
     border-bottom: 3px solid var(--gris-claro); /* línea separadora */
 }
 
@@ -40,7 +40,7 @@ main {
 
 /* Formulario */
 form {
-    background-color: #ffe8cd;
+    background-color: var(--color-fondo-formulario);
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--gris-claro);
