@@ -1,4 +1,6 @@
 @import url(style.css);
+@import url(variables.css);
+
 
 /* Reset básico */
 html, body {

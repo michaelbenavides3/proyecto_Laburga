@@ -1,4 +1,5 @@
 @import url(style.css);
+@import url(variables.css);
 
 /* Página del mesero */
 html, body {
