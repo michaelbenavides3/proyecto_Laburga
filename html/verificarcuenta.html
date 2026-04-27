@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>verificar cuenta</title>
+  <link rel="stylesheet" href="../css/verificarcuenta.css">
+</head>
+<body>
+  <main>
+    <section class="verificar-cuenta">
+      <h2>Verificar Cuenta</h2>
+      <form action="/verificarCuenta" method="post">
+        <label for="mesa">Número de mesa:</label>
+        <select id="mesa" name="mesa" required>
+          <option value="">Seleccione una mesa</option>
+          <option value="1">Mesa 1</option>
+          <option value="2">Mesa 2</option>
+          <option value="3">Mesa 3</option>
+          <option value="3">Mesa 4</option>
+          <option value="3">Mesa 5</option>
+          <option value="3">Mesa 6</option>
+          <option value="3">Mesa 7</option>
+          <option value="3">Mesa 8</option>
+        </select>
+        
+        <!-- Aquí se mostraría el resumen dinámico -->
+        <div class="resumen-cuenta">
+          <h3>Resumen</h3>
+          <ul>
+            <li>Pizza Margarita x2 — $40.000</li>
+            <li>Refresco x3 — $15.000</li>
+          </ul>
+          <p>Subtotal: $55.000</p>
+          <p>Impuestos: $5.500</p>
+          <p>Total: $60.500</p>
+        </div>
+  
+        <button type="submit" class="btn--envio">Confirmar Verificación</button>
+        <button type="reset" class="btn--cancelar">Cancelar Verificación</button>
+      </form>
+    </section>
+  </main>
+
+  
+</body>
+</html>
