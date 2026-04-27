@@ -15,7 +15,8 @@
   --rojo-ocupada: #ff6868;
   --btn-rojo-cancelar: #ea0404;
   --btn-hover-cancelar: #810000;
-   
+  --color-fondo-formulario: #ffe8cd;
+   --padding-header:50px;
 }
 
 *{
