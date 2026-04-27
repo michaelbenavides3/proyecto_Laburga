@@ -56,7 +56,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px var(--gris-claro);
     width: 400px;
-    margin: 100px auto;
+    margin: 20px auto;
 }
 
 .form-reserva h2 {
