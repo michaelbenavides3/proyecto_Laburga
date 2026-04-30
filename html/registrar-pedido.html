@@ -6,155 +6,32 @@
   <link rel="stylesheet" href="../css/registrar-pedido.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/variables.css">
-  <title>Document</title>
+  <title>Registrar perdido</title>
 </head>
 <body>
-<div class="pedido">
-  <h2 class="pedido__titulo">Tomar Pedido / Mesero</h2>
-  <!-- div para contener el formulario y contener el logo, para lograr separarlos en dos paneles iguales -->
-  <div class="pedido__contenedor">
-     <!-- columna izquierda del formulario -->
-     <div class="pedidio__formulario">
-      <form class="pedido__form"> 
-        <!-- Selección de mesa --> 
-        <!-- <label>Mesa: 
-          <select class="pedido__select opcion__mesa">
-            <option>Mesa 1</option>
-            <option>Mesa 2</option>
-            <option>Mesa 3</option>
-            <option>Mesa 4</option>
-            <option>Mesa 5</option>
-            <option>Mesa 6</option>
-            <option>Mesa 7</option>
-            <option>Mesa 8</option>
-           </select> 
-         </label>  -->
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-          <h2>Panel Menú Mesero</h2>
-          <nav>
-            <img src="../recurso/logo-burguer.png" alt="imagen-logo-lagurga">
-            <a href="mesas.html" class="btn">Mesas</a>
-            <a href="registrar-pedido.html" class="btn">Registrar Pedido</a>
-            <a href="unir-mesas.html" class="btn">Unir Mesas</a>
-            <a href="agregar-producto.html" class="btn">Agregar Producto</a>
-            <a href="separar-mesas.html" class="btn">Separar Mesas</a>
-            <a href="separar-mesas.html" class="btn">Enviar cuentas</a>
-            <a href="separar-mesas.html" class="btn">Verificar cuenta</a>
-            <a href="separar-mesas.html" class="btn">Cerrar cuenta</a>
-            <a href="separar-mesas.html" class="btn">Verificar cuenta</a>
-          </nav>
-        </aside>
-         <!-- Datos del cliente --> 
-         <label>Cliente: 
-           <input type="text" class="pedido__input datos__cliente" placeholder="Nombre del cliente"> 
-         </label> 
-         <label>Teléfono: <input type="text" class="pedido__input datos__telefono" placeholder="Teléfono del cliente"> 
-         </label> 
-       </form>
-     </div>
-     <!-- columna derecha del formulario -->
-     <!-- logo del restaurante -->
-      <div class="pedidio__logo-contenedor">
-        <img src="../recurso/logo-burguer.png" alt="logo del restaurante" class="pedido__logo">
-      </div>
-   </div>
-  <!-- Productos -->
-    <!-- <table class="pedido__tabla">
-      <tr>
-        <th>Producto</th>
-        <th>Descripcion</th>
-        <th>Precio</th>
-        <th>Cantidad</th>
-      </tr>
-      <tr>
-        <td> Hamburguesa Clásica</td>
-        <td>Carne 100% de res, queso amarillo, lechuga, tomate, cebolla y mayonesa en pan brioche.</td>
-        <td>$19.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hamburguesa Especial</td>
-        <td>Carne de res, queso cheddar, tocino crujiente, cebolla caramelizada y salsa BBQ.</td>
-        <td>$25.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hamburguesa Pollo</td>
-        <td>Carne de pollo, guacamole, chiles, pico de gallo, queso amarillo y mayonesa.</td>
-        <td>$22.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hamburguesa Suprema</td>
-        <td>Doble carne, queso cheddar, tocino crujiente, aros de cebolla, lechuga, tomate y salsa de la casa.</td>
-        <td>$35.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hotdog Clasico</td>
-        <td>Salsicha Frankfurt en pan suave, con mostaza, ketchup, cebolla picada y el toque tradicional.</td>
-        <td>$19.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hotdog de la casa</td>
-        <td>Salchicha premium sobre pan artesanal, bañada en chili con carne, queso y toques de jalapeños.</td>
-        <td>$19.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hotdog Americano</td>
-        <td>Salchicha Frankfurt, pan al vapor, mostaza, chucrut y cebolla dorada, el autentico sabor neoyorquino.</td>
-        <td>$19.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Hotdog XXL 32cm</td>
-        <td>Salchicha gigante de 32cm en pan
-        artesanal, doble porcion de ingredientes, pollo, carne, salsa de la casa.</td>
-        <td>$19.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Papas Locas</td>
-        <td>papas crujientes, bañadas en queso, carne, salsas y una explosion de toppings para compartir.</td>
-        <td>$25.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Papas Especiales</td>
-        <td>papas salchicha premium, tocineta, salsa de queso, aros de cebolla, mermelada de pimenton.</td>
-        <td>$40.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>   
-      <tr>
-        <td>Gaseosa</td>
-        <td>Productos Postobon, de varios sabores</td>
-        <td>$5.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Agua</td>
-        <td>Sin gas, Con gas</td>
-        <td>$5.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Te Hatsu</td>
-        <td>Varios sabores</td>
-        <td>$7.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-      <tr>
-        <td>Cerveza</td>
-        <td>Importadas</td>
-        <td>$12.000</td>
-        <td><input type="number" class="pedido__cantidad" value="0" min="0"></td>
-      </tr>
-    </table>  -->
-
+  <!-- header -->
+  <header class="header">
+    <h1>Gestion menu - panel mesero</h1>
+  </header>
+<!-- contener el formulario y contener el logo, para lograr separarlos en dos paneles iguales -->
+  <!-- Sidebar -->
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Panel Menú Mesero</h2>
+    <nav>
+      <img src="../recurso/logo-burguer.png" alt="imagen-logo-lagurga">
+      <a href="mesas.html" class="btn">Mesas</a>
+      <a href="unir-mesas.html" class="btn">Unir Mesas</a>
+      <a href="separar-mesas.html" class="btn">Separar Mesas</a>
+      <a href="enviar-cuenta.html" class="btn">Enviar cuenta</a>
+      <a href="verificarcuenta.html" class="btn">Verificar cuenta</a>
+      <a href="formulario-reserva.html" class="btn">Realizar Reserva</a>
+      <a href="formulario-clientenuevo-mesero.html" class="btn">Nuevo Cliente</a>
+    </nav>
+  </aside>
+  <main class="contenido">
+    <!-- <h2 class="contenido__titulo">Carta del Menu</h2> -->
     <div class="productos-grid">
       <h2 class="titulo__hamburguesa">Hamburguesas</h2>
       <div class="producto-card">
@@ -288,12 +165,20 @@
           </label>
         </div>
     </div>    
-    <label class="pedido__label">Observaciones generales del pedido:</label> 
-    <textarea class="pedido__observacion-general" placeholder="Observaciones Generales"> </textarea> 
-    <!-- Botón Guardar --> 
-    <button type="submit" class="pedido__boton pedido__boton--guardar">Guardar Pedido</button>
-    <button type="button" class="pedido__boton pedido__boton--cancelar" onclick="cancelarPedido()">Cancelar Pedido</button>
+    <!-- espacio para que el mesero ingrese las observaciones del pedido -->
+     <div class="observaciones">
+       <label class="pedido__label">Observaciones generales del pedido:</label> 
+       <textarea class="pedido__observacion-general" placeholder="Observaciones Generales"> </textarea> 
+       <!-- Botón Guardar --> 
+       <button type="submit" class="pedido__boton pedido__boton--guardar">Guardar Pedido</button>
+       <button type="button" class="pedido__boton pedido__boton--cancelar" onclick="cancelarPedido()">Cancelar Pedido</button>
+     </div>
+  </main>
   <!-- </form> -->
 </div>
+<footer class="footer">
+  <p>&copy; 2025 Labur-Ga. Todos los derechos reservados.</p>
+</footer>
+<!-- </div> -->
 </body>
 </html>
