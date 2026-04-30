@@ -2,12 +2,14 @@
 
 
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body.inicio {
   background-color: var(--gris-claro);
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
   color: var(--texto);
   margin: 0;
   padding: 0;
@@ -55,13 +57,15 @@ body.inicio {
 }
 
 .footer {
-  background-color: var(--crema-claro);
+  background-color: var(--naranja-medio);
   padding: 1rem;
   font-size: 0.9rem;
-  border-top: 1px solid var(--naranja-medio);
+  border-top: 3px solid var(--naranja-medio);
   position: fixed;
+  color: var(--gris-claro);
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 70px;
 }
 
