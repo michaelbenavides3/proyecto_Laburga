@@ -109,9 +109,10 @@ main {
 
 /* Footer */
 .footer {
-  border-top: 1px solid var(--naranja-medio);
-  background-color: var(--crema-claro);
+  background-color: var(--naranja-medio);
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 25px;
   margin-top: 0; /* evita que se superponga */
+  border-top: 3px solid var(--naranja-oscuro);
+  color: #fff;
 }
