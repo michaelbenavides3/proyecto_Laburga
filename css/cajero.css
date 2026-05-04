@@ -59,7 +59,9 @@ body.cajero {
   color: white;
 }
 
-.pie {
+.footer {
   border-top: 1px solid var(--naranja-medio);
   margin-top: auto;     /* empuja el footer al final */
+  text-align: center;
+  border-top: 3px solid var(--naranja-oscuro);
 }
