@@ -88,8 +88,8 @@ body.login {
   width: 100%;                 /* ocupa todo el ancho */
   text-align: center;          /* centra el texto */
   /* background-color: var(-); */
-  padding: 1rem;
-  border-top: 1px solid var(--naranja-medio);
+  padding: 25px;
+  border-top: 3px solid var(--naranja-oscuro);
   margin-top: auto;            /* empuja el footer al fondo */
   box-sizing: border-box;
 }

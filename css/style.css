@@ -59,6 +59,7 @@ body.inicio {
 .footer {
   background-color: var(--naranja-medio);
   padding: 1rem;
+  padding: 25px;
   font-size: 0.9rem;
   border-top: 3px solid var(--naranja-medio);
   position: fixed;
