@@ -61,7 +61,7 @@ body.inicio {
   padding: 1rem;
   padding: 25px;
   font-size: 0.9rem;
-  border-top: 3px solid var(--naranja-medio);
+  border-top: 3px solid var(--naranja-oscuro);
   position: fixed;
   color: var(--gris-claro);
   bottom: 0;
