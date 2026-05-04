@@ -103,9 +103,10 @@ input {
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: var(--naranja-medio);
     color: white;
     text-align: center;
     padding: 10px;
+    border-top: 3px solid var(--naranja-oscuro);
 }
