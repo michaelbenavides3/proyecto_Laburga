@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desactivar Usuario</title>
+  <link rel="stylesheet" href="../css/desactivar-usuario.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Gestión de Usuarios - Panel Administrador</h1>
+  </header>
+
+  <!-- Layout principal -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Opciones Administrador</h2>
+      <nav>
+        <a href="a-nuevoTrabajado.html" class="btn">Formulario Nuevo Trabajador</a>
+        <a href="a-asignar-rol.html" class="btn">Asignar/Modificar Rol</a>
+        <a href="a-desactivar-usuario.html" class="btn">Desactivar Usuario</a>
+        <a href="gestionar-permisos.html" class="btn">Gestionar Permisos</a>
+        <a href="restablecer-password.html" class="btn">Restablecer Contraseña</a>
+        <a href="actualizar-menu.html" class="btn">Actualizar Menú</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+      <h2>Desactivar Usuario</h2>
+
+      <form id="form-desactivar">
+        <label for="usuario">Seleccione Usuario:</label>
+        <select id="usuario" name="usuario" required>
+          <option value="">Seleccione...</option>
+          <option value="juan">Juan Pérez</option>
+          <option value="maria">María Gómez</option>
+          <option value="carlos">Carlos López</option>
+        </select>
+
+        <button type="submit" class="btn btn--desactivar">Desactivar Usuario</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Labur-Ga. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>
