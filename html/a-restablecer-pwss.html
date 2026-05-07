@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restablecer Contraseña</title>
+  <link rel="stylesheet" href="../css/restablecer-pwss.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Gestión de Usuarios - Panel Administrador</h1>
+  </header>
+
+  <!-- Layout principal -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Opciones Administrador</h2>
+      <nav>
+        <a href="a-nuevoTrabajado.html" class="btn">Formulario Nuevo Trabajador</a>
+        <a href="asignar-rol.html" class="btn">RF-17 Asignar/Modificar Rol</a>
+        <a href="desactivar-usuario.html" class="btn">RF-18 Desactivar Usuario</a>
+        <a href="gestionar-permisos.html" class="btn">RF-19 Gestionar Permisos</a>
+        <a href="restablecer-password.html" class="btn">RF-20 Restablecer Contraseña</a>
+        <a href="actualizar-menu.html" class="btn">RF-21 Actualizar Menú</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+      <h2>Restablecer Contraseña</h2>
+
+      <form id="form-password">
+        <label for="usuario">Seleccione Usuario:</label>
+        <select id="usuario" name="usuario" required>
+          <option value="">Seleccione...</option>
+          <option value="juan">Juan Pérez</option>
+          <option value="maria">María Gómez</option>
+          <option value="carlos">Carlos López</option>
+        </select>
+
+        <label for="nueva">Nueva Contraseña Temporal:</label>
+        <input type="text" id="nueva" name="nueva" placeholder="Ej: Abc123!" required>
+
+        <button type="submit" class="btn btn--guardar">Restablecer Contraseña</button>
+        <button type="reset" class="btn btn--cancelar">Cancelar</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Labur-Ga. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>
