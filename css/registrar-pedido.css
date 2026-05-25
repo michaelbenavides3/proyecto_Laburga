@@ -19,7 +19,7 @@ body {
 /* HEADER */
 .header {
   background: var(--gris-claro);
-  color: var(--);
+  color: var(--naranja-medio);
   border-bottom: 3px solid var(--naranja-oscuro);
   padding: 2rem;
   text-align: center;
